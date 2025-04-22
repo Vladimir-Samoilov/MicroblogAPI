@@ -3,10 +3,13 @@ from django.db import models
 
 User = get_user_model()
 
+TITLE_MAX_LENGTH = 200
+SLUG_MAX_LENGTH = 50
+
 
 class Group(models.Model):
-    title = models.CharField(max_length=200)
-    slug = models.SlugField(max_length=50, unique=True)
+    title = models.CharField(max_length=TITLE_MAX_LENGTH)
+    slug = models.SlugField(max_length=SLUG_MAX_LENGTH, unique=True)
     description = models.TextField()
 
     def __str__(self):
