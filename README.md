@@ -79,7 +79,7 @@
     GET /api/v1/groups/
     ```
 
-## 🧑‍💻 Автор
+##  Автор
 
 Владимир Самойлов  
 [GitHub](https://github.com/Vladimir-Samoilov)
